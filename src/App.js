@@ -3,7 +3,7 @@ import Hello from "./Hello";
 import Welcome from "./Welcome";
 
 Welcome.defaultProps = {
-    name: "Gigi"
+    name: <strong>Gigi</strong>
 };
 class App extends React.Component {
   render() {
