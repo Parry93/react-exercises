@@ -1,24 +1,24 @@
 import React from "react";
 
-class Counter extends React.Component{
-    state = {count: 0};
-     constructor (){
-        super();
-    
-        setInterval(() => {
-          this.setState ({
-            count: this.state.count +1
-          })
+class Counter extends React.Component {
+  state = { count: this.props.initValue };
 
-            }, 1000);
-    }
-    render(){
-        return(
-            <React.Fragment>
-            <h1>{this.state.count}</h1>
-            </React.Fragment>
-        );
-    }
+  constructor(props) {
+    super(props);
+
+    setInterval(() => {
+      this.setState({
+        count: this.state.count + this.props.setIncrement
+      });
+    }, this.props.setInterval);
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <h1>{this.state.count}</h1>
+      </React.Fragment>
+    );
+  }
 }
 
-export default Counter
+export default Counter;

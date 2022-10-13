@@ -14,7 +14,7 @@ class App extends React.Component {
       <div>
         <Hello />
         <Welcome age= {29} /> 
-        <Counter />
+        <Counter   initValue={0} setIncrement={+1} setInterval={1000}/>
       </div>
     );
   }
