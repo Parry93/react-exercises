@@ -3,7 +3,7 @@ class CliclCounter extends React.Component {
   state = { count: 0 };
 
   handlerIncrement = () => {
-    this.setState((state) => {
+    this.setState(() => {
       return {
         count: this.state.count + 1,
       };
