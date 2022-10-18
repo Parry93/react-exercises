@@ -5,6 +5,7 @@ import Counter from "./Counter";
 import Hello from "./Hello";
 import InteractiveWelcome from "./InteractiveWelcome";
 import Welcome from "./Welcome";
+import Login from "./Login"
 
 Welcome.defaultProps = {
   name: "John",
@@ -19,6 +20,7 @@ class App extends React.Component {
         <ClickCounter />
         <ClickTracker />
         <InteractiveWelcome/>
+        <Login />
       </div>
     );
   }
