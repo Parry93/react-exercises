@@ -1,6 +1,6 @@
 import React from "react";
 class Login extends React.Component {
-  state = { username: "", password: "", chechbox: "" };
+  state = { username: "", password: "", checkbox: "" };
 
   handleInputChange = (event) => {
     const name = event.target.name;
