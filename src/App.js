@@ -6,6 +6,7 @@ import Hello from "./Hello";
 import InteractiveWelcome from "./InteractiveWelcome";
 import Welcome from "./Welcome";
 import Login from "./Login"
+import UncontrolledLogin from "./UncontrolledLogin";
 
 Welcome.defaultProps = {
   name: "John",
@@ -23,6 +24,7 @@ class App extends React.Component {
         <ClickTracker />
         <InteractiveWelcome/>
         <Login />
+        <UncontrolledLogin />
       </div>
     );
   }
