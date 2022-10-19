@@ -15,9 +15,6 @@ class UncontrolledLogin extends React.Component{
 		});
 	};
 
-
-
-
     render(){
         return(
             <>
