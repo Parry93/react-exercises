@@ -28,9 +28,6 @@ class UncontrolledLogin extends React.Component{
             </form>
             </>
         )
-
-
-
     }
 }
 export default UncontrolledLogin 
