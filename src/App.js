@@ -11,7 +11,10 @@ Welcome.defaultProps = {
   name: "John",
 };
 class App extends React.Component {
-
+  
+  onLogin = (state) => {
+    console.log(state);
+  };
  
   render() {
     return (
@@ -22,7 +25,7 @@ class App extends React.Component {
         <ClickCounter />
         <ClickTracker />
         <InteractiveWelcome/>
-        <Login />
+        <Login onLogin={this.onLogin}  />
       </div>
     );
   }
