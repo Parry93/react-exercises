@@ -2,7 +2,7 @@ import React from "react";
 
 
 class TodoList extends React.Component{
-    state = {items :["HTML", "CSS", "JS", "REACT"],
+    state = {items :["HTML", "CSS", "JS"],
     newList : null,
     addBtn : true,
 
