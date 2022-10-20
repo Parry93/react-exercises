@@ -5,7 +5,7 @@ import Counter from "./Counter";
 import Hello from "./Hello";
 import InteractiveWelcome from "./InteractiveWelcome";
 import Welcome from "./Welcome";
-import Login from "./Login"
+import Login from "./Login";
 import UncontrolledLogin from "./UncontrolledLogin";
 import TodoList from "./TodoList";
 
@@ -14,10 +14,9 @@ Welcome.defaultProps = {
 };
 class App extends React.Component {
   onLogin = (state) => {
-		console.log(state);
-	};
+    console.log(state);
+  };
 
- 
   render() {
     return (
       <div>
@@ -26,9 +25,8 @@ class App extends React.Component {
         <Counter initValue={0} setIncrement={+1} setInterval={1000} />{" "}
         <ClickCounter />
         <ClickTracker />
-        <InteractiveWelcome/>
-        <Login  onLogin={this.onLogin}/>
-        <UncontrolledLogin />
+        <InteractiveWelcome />
+        <Login onLogin={this.onLogin} /> <UncontrolledLogin />
         <TodoList />
       </div>
     );
