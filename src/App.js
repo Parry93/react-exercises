@@ -7,6 +7,7 @@ import InteractiveWelcome from "./InteractiveWelcome";
 import Welcome from "./Welcome";
 import Login from "./Login"
 import UncontrolledLogin from "./UncontrolledLogin";
+import TodoList from "./TodoList";
 
 Welcome.defaultProps = {
   name: "John",
@@ -28,6 +29,7 @@ class App extends React.Component {
         <InteractiveWelcome/>
         <Login  onLogin={this.onLogin}/>
         <UncontrolledLogin />
+        <TodoList />
       </div>
     );
   }
