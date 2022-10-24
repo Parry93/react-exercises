@@ -26,7 +26,8 @@ class App extends React.Component {
         <ClickCounter />
         <ClickTracker />
         <InteractiveWelcome />
-        <Login onLogin={this.onLogin} /> <UncontrolledLogin />
+        <Login onLogin={this.onLogin} /> 
+        <UncontrolledLogin />
         <TodoList />
       </div>
     );
