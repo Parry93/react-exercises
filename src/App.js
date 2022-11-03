@@ -9,7 +9,7 @@ import Login from "./Login";
 import UncontrolledLogin from "./UncontrolledLogin";
 import TodoList from "./TodoList";
 import Container from "./Container";
-import LanguageComponent from "./LanguageComponent";
+import LanguageComponent from "./LanguageContext";
 
 Welcome.defaultProps = {
   name: "John",
@@ -55,6 +55,7 @@ class App extends React.Component {
         <br/>
         <LanguageComponent />
         </Container>
+        
         
       </div>
     );
