@@ -9,6 +9,7 @@ import Login from "./Login";
 import UncontrolledLogin from "./UncontrolledLogin";
 import TodoList from "./TodoList";
 import Container from "./Container";
+import LanguageComponent from "./LanguageComponent";
 
 Welcome.defaultProps = {
   name: "John",
@@ -16,20 +17,30 @@ Welcome.defaultProps = {
 class App extends React.Component {
   onLogin = (state) => {
     console.log(state);
+    
   };
 
   render() {
     return (
       <div>
         <Container title="this is a component composition ">
+        <br/>
         <Hello />
+        <br/>
         <Welcome age={29} />{" "}
+        <br/>
         <Counter initValue={0} setIncrement={+1} setInterval={1000} />{" "}
+        <br/>
         <ClickCounter />
+        <br/>
         <ClickTracker />
+        <br/>
         <InteractiveWelcome />
+        <br/>
         <Login onLogin={this.onLogin} /> 
+        <br/>
         <UncontrolledLogin />
+        <br/>
         <TodoList render = { (items, removeItem) => {
                             return (
                              items.map((item, index)=> (
@@ -41,9 +52,10 @@ class App extends React.Component {
                             )
                             }
                         } />
-        
-
+        <br/>
+        <LanguageComponent />
         </Container>
+        
       </div>
     );
   }
