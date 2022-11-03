@@ -8,6 +8,7 @@ import Welcome from "./Welcome";
 import Login from "./Login";
 import UncontrolledLogin from "./UncontrolledLogin";
 import TodoList from "./TodoList";
+import Container from "./Container";
 
 Welcome.defaultProps = {
   name: "John",
@@ -20,6 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <Container>
         <Hello />
         <Welcome age={29} />{" "}
         <Counter initValue={0} setIncrement={+1} setInterval={1000} />{" "}
@@ -29,6 +31,9 @@ class App extends React.Component {
         <Login onLogin={this.onLogin} /> 
         <UncontrolledLogin />
         <TodoList />
+        
+
+        </Container>
       </div>
     );
   }
