@@ -30,7 +30,17 @@ class App extends React.Component {
         <InteractiveWelcome />
         <Login onLogin={this.onLogin} /> 
         <UncontrolledLogin />
-        <TodoList />
+        <TodoList render = { (items, removeItem) => {
+                            return (
+                             items.map((item, index)=> (
+                                    <div key={item + index}>{item}
+
+                                      <button type='button' onClick={(event)=>{removeItem(event, index)}} >Remove</button>
+                                    </div>
+                                ))
+                            )
+                            }
+                        } />
         
 
         </Container>
