@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Container>
+        <Container title="this is a component composition ">
         <Hello />
         <Welcome age={29} />{" "}
         <Counter initValue={0} setIncrement={+1} setInterval={1000} />{" "}
