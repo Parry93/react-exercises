@@ -4,12 +4,13 @@ import ClickTracker from "./ClickTracker";
 import Counter from "./Counter";
 import Hello from "./Hello";
 import InteractiveWelcome from "./InteractiveWelcome";
-import Welcome from "./Welcome";
+import { Welcome } from "./Welcome";
 import Login from "./Login";
 import UncontrolledLogin from "./UncontrolledLogin";
 import TodoList from "./TodoList";
 import Container from "./Container";
 import LanguageComponent from "./LanguageContext";
+
 
 Welcome.defaultProps = {
   name: "John",
@@ -24,23 +25,23 @@ class App extends React.Component {
     return (
       <div>
         <Container title="this is a component composition ">
-        <br/>
+        
         <Hello />
-        <br/>
-        <Welcome age={29} />{" "}
-        <br/>
-        <Counter initValue={0} setIncrement={+1} setInterval={1000} />{" "}
-        <br/>
+        
+        <Welcome age={29}/>
+        
+        <Counter initValue={0} setIncrement={+1} setInterval={1000} />
+        
         <ClickCounter />
-        <br/>
+        
         <ClickTracker />
-        <br/>
+        
         <InteractiveWelcome />
-        <br/>
+        
         <Login onLogin={this.onLogin} /> 
-        <br/>
+        
         <UncontrolledLogin />
-        <br/>
+        
         <TodoList render = { (items, removeItem) => {
                             return (
                              items.map((item, index)=> (
@@ -52,8 +53,9 @@ class App extends React.Component {
                             )
                             }
                         } />
-        <br/>
+        
         <LanguageComponent />
+   
         </Container>
         
         

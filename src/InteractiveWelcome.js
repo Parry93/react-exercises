@@ -1,5 +1,5 @@
 import React from "react";
-import Welcome from "./Welcome";
+import { Welcome } from "./Welcome";
 
 class InteractiveWelcome extends React.Component {
   state = { user: "" };
