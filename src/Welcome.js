@@ -5,7 +5,7 @@ import React from 'react'
 
 export const Welcome = (props) => {
   return (
-    <div>return (
+    <div>
       <div>
          <div className="welcome">
           <p> Welcome, {props.name} </p>
@@ -16,7 +16,7 @@ export const Welcome = (props) => {
         </div>
         
       </div>
-    )</div>
+    </div>
   )
 }
 

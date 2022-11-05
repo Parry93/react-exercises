@@ -34,7 +34,9 @@ class App extends React.Component {
         
         <Counter initValue={0} setIncrement={+1} setInterval={1000} />
         
-        <ClickCounter />
+        <ClickCounter onCounterChange = {(counter)=> {
+                         console.log(counter)
+                    }}/>
         
         <ClickTracker />
         
