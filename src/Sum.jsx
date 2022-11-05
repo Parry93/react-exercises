@@ -12,3 +12,4 @@ const Sum = (props) => {
 }
 
 export default Sum
+""
