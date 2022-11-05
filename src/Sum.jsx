@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Sum = ({numbers =[1,2,3,4]}) => {
+const Sum = ({numbers =[1,2,3,4
+]}) => {
 
   const result = numbers.reduce((sum, current)=>{
     return sum + current
