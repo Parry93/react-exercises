@@ -58,7 +58,7 @@ class App extends React.Component {
         
         <LanguageComponent />
 
-        <Sum numbers={[1, 2, 3]}/>
+        <Sum />
    
         </Container>
         
