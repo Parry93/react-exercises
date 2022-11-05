@@ -10,6 +10,8 @@ import UncontrolledLogin from "./UncontrolledLogin";
 import TodoList from "./TodoList";
 import Container from "./Container";
 import LanguageComponent from "./LanguageContext";
+import Sum from "./Sum";
+
 
 
 Welcome.defaultProps = {
@@ -55,6 +57,8 @@ class App extends React.Component {
                         } />
         
         <LanguageComponent />
+
+        <Sum numbers={[1, 2, 3]}/>
    
         </Container>
         
