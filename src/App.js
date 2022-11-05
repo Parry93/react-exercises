@@ -5,7 +5,7 @@ import Counter from "./Counter";
 import Hello from "./Hello";
 import InteractiveWelcome from "./InteractiveWelcome";
 import { Welcome } from "./Welcome";
-import Login from "./Login";
+import { Login } from "./Login";
 import UncontrolledLogin from "./UncontrolledLogin";
 import TodoList from "./TodoList";
 import Container from "./Container";
