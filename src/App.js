@@ -11,6 +11,7 @@ import TodoList from "./TodoList";
 import Container from "./Container";
 import LanguageComponent from "./LanguageContext";
 import Sum from "./Sum";
+import GithubUser from "./GithubUser";
 
 
 
@@ -61,8 +62,11 @@ class App extends React.Component {
         <LanguageComponent />
 
         <Sum />
+
+        <GithubUser />
    
         </Container>
+
         
         
       </div>
