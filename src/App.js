@@ -32,7 +32,7 @@ class App extends React.Component {
         
         <Welcome age={29}/>
         
-        <Counter initValue={0} setIncrement={+1} setInterval={1000} />
+        <Counter />
         
         <ClickCounter onCounterChange = {(counter)=> {
                          console.log(counter)
