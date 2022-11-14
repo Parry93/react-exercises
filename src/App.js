@@ -11,7 +11,7 @@ import TodoList from "./TodoList";
 import Container from "./Container";
 import LanguageComponent from "./LanguageContext";
 import Sum from "./Sum";
-import GithubUser from "./GithubUser";
+import GithubUser from "./GithubUser"
 
 
 
