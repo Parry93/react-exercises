@@ -16,8 +16,7 @@ import GithubUserList from "./GithubUserList";
 
 import CustomCounter from "./UseCounter";
 import { CustomLogin } from "./UseForm";
-
-
+import { CarDetails } from "./CarDetails";
 
 Welcome.defaultProps = {
   name: "John",
@@ -25,59 +24,67 @@ Welcome.defaultProps = {
 class App extends React.Component {
   onLogin = (state) => {
     console.log(state);
-    
   };
 
   render() {
     return (
       <div>
         <Container title="this is a component composition ">
-        
-        <Hello />
-        
-        <Welcome age={29}/>
-        
-        <Counter />
-        
-        <ClickCounter onCounterChange = {(counter)=> {
-                         console.log(counter)
-                    }}/>
-        
-        <ClickTracker />
-        
-        <InteractiveWelcome />
-        
-        <Login onLogin={this.onLogin} /> 
-        
-        <UncontrolledLogin />
-        
-        <TodoList render = { (items, removeItem) => {
-                            return (
-                             items.map((item, index)=> (
-                                    <div key={item + index}>{item}
+          <Hello />
 
-                                      <button type='button' onClick={(event)=>{removeItem(event, index)}} >Remove</button>
-                                    </div>
-                                ))
-                            )
-                            }
-                        } />
-        
-        <LanguageComponent />
+          <Welcome age={29} />
 
-        <Sum />
+          <Counter />
 
-        <GithubUser />
-   
-   <GithubUserList />
+          <ClickCounter
+            onCounterChange={(counter) => {
+              console.log(counter);
+            }}
+          />
 
-   <CustomCounter />
+          <ClickTracker />
 
-   <CustomLogin />
+          <InteractiveWelcome />
+
+          <Login onLogin={this.onLogin} />
+
+          <UncontrolledLogin />
+
+          <TodoList
+            render={(items, removeItem) => {
+              return items.map((item, index) => (
+                <div key={item + index}>
+                  {item}
+
+                  <button
+                    type="button"
+                    onClick={(event) => {
+                      removeItem(event, index);
+                    }}
+                  >
+                    Remove
+                  </button>
+                </div>
+              ));
+            }}
+          />
+
+          <LanguageComponent />
+
+          <Sum />
+
+          <GithubUser />
+
+          <GithubUserList />
+
+          <CustomCounter />
+
+          <CustomLogin />
+
+          <CarDetails
+          initialData={{ model: "FIAT Panda", year: "2010", color: "Blue" }}
+        />
         </Container>
-
-        
-        
       </div>
     );
   }

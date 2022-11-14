@@ -11,7 +11,7 @@ const GithubUser = ({username="Parry93"}) => {
     
         getData(username)
     
-       }, [username])
+       }, )
     
     
     return(
