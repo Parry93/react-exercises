@@ -15,6 +15,7 @@ import GithubUser from "./GithubUser";
 import GithubUserList from "./GithubUserList";
 import UseCounter from "./UseCounter";
 import CustomCounter from "./UseCounter";
+import { CustomLogin } from "./UseForm";
 
 
 
@@ -71,6 +72,8 @@ class App extends React.Component {
    <GithubUserList />
 
    <CustomCounter />
+
+   <CustomLogin />
         </Container>
 
         
