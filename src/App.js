@@ -12,6 +12,7 @@ import Container from "./Container";
 import LanguageComponent from "./LanguageContext";
 import Sum from "./Sum";
 import GithubUser from "./GithubUser";
+import GithubUserList from "./GithubUserList";
 
 
 
@@ -65,6 +66,7 @@ class App extends React.Component {
 
         <GithubUser />
    
+   <GithubUserList />
         </Container>
 
         
