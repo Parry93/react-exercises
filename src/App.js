@@ -13,6 +13,8 @@ import LanguageComponent from "./LanguageContext";
 import Sum from "./Sum";
 import GithubUser from "./GithubUser";
 import GithubUserList from "./GithubUserList";
+import UseCounter from "./UseCounter";
+import CustomCounter from "./UseCounter";
 
 
 
@@ -67,6 +69,8 @@ class App extends React.Component {
         <GithubUser />
    
    <GithubUserList />
+
+   <CustomCounter />
         </Container>
 
         
