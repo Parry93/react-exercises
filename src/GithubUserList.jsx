@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import GithubUser from './GithubUser'
+import { GithubUser } from './GithubUser'
 
 const GithubUserList = () => {
     const [input, setInput] = useState('')
