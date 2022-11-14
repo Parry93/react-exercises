@@ -1,28 +1,21 @@
-import React from "react" 
-import  { LanguageContext } from "./LanguageContext"
+import { useContext } from "react"
+import { LanguageContext } from "./LanguageContext"
 
-const strings = {
-    en :{
-        HELLO: "Hello "
+const Strings = {
+    en: {
+        HELLO : "Hello"
     },
-    it :{
-        HELLO: "Ciao"
+    it: {
+        HELLO : "Ciao"
     }
 }
-class DisplayLanguage extends React.Component{
-    render(){
-        return <div>
-            <LanguageContext.Consumer>
-            {language =>{
-                return (
-                    <h1>{strings[language].HELLO}</h1>
-                )
-            }}
-            </LanguageContext.Consumer>
-        </div>
-    }
-    
+const DisplayLanguage = () => {
+  
+    const language = useContext(LanguageContext)
+    return (
+          <h1>{Strings[language].HELLO}</h1>
+             
+  )
 }
-
 
 export default DisplayLanguage
