@@ -1,26 +1,29 @@
-import { useEffect } from "react";
-import UseGithubUser from "./UseGithubUser";
+import React, { useEffect, useState } from 'react'
+import axios from "axios"
 
+const GithubUser = ({username="Parry93"}) => {
+    const url = `https://api.github.com/users/${username}`;
+    const [data, setData] = useState([])
 
-export function GithubUser({username}) {
-
-const {data, fetchData} = UseGithubUser(username)
-
-
-useEffect(() => {
-
-    fetchData(username)
-
-   }, [username])
-
-return(
-    
+    const getData = async () => {
+		const response = await axios.get(url);
+		console.log(response);
+		setData(response.data);
+        
+    }
+    useEffect(
+        () => {
+            getData();
+        },
+        []
+    );
+  return (
     <div>
-    {data && <h1>{data.name}</h1>}
-    {data && <h1>{data.html_url}</h1>}
-
+        <h2>{data.name}</h2>
+		<p>{data.html_url}</p>
+      
     </div>
-    
-)
-
+  )
 }
+
+export default GithubUser
