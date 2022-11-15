@@ -17,6 +17,7 @@ import GithubUserList from "./GithubUserList";
 import CustomCounter from "./UseCounter";
 import { CustomLogin } from "./UseForm";
 import { CarDetails } from "./CarDetails";
+import FilteredList from "./FilteredList";
 
 Welcome.defaultProps = {
   name: "John",
@@ -84,6 +85,8 @@ class App extends React.Component {
           <CarDetails
           initialData={{ model: "FIAT Panda", year: "2010", color: "Blue" }}
         />
+
+        <FilteredList />
         </Container>
       </div>
     );
