@@ -28,7 +28,7 @@ function App () {
       
           <Routes>
               <Route path="/" element={<Welcome name="Emanuele" />} />
-              
+              <Route path="/counter" element={<Counter/>} />
           </Routes>
           
         
