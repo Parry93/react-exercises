@@ -19,6 +19,7 @@ import { CustomLogin } from "./UseForm";
 import { CarDetails } from "./CarDetails";
 import {Route, BrowserRouter, Routes} from "react-router-dom"
 import DisplayLanguage from "./DisplayLanguage";
+import ShowGithubUser from "./ShowGithubUser";
 
 
 function App () {
@@ -29,6 +30,7 @@ function App () {
           <Routes>
               <Route path="/" element={<Welcome name="Emanuele" />} />
               <Route path="/counter" element={<Counter/>} />
+              <Route path="/users/:username" element={<ShowGithubUser />}/> 
           </Routes>
           
         
